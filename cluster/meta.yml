@@ -1,0 +1,5 @@
+deploy_env: cluster
+env_monitoring_id: cluster
+always_deploy_formplayer: true
+users:
+  - admins

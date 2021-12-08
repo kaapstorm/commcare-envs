@@ -290,7 +290,7 @@ host_settings: {}
 known_hosts_file: /home/nhooper/environments/cluster/known_hosts
 letsencrypt_cas_ssl: false
 letsencrypt_cchq_ssl: true
-new_release_name: 2021-12-07_17.28
+new_release_name: 2021-12-08_00.56
 nginx_block_ips: []
 nginx_combined_cert_value: null
 nginx_hsts_max_age: null

@@ -1,4 +1,4 @@
-SITE_HOST: 'cluster.commcarehq.test'
+SITE_HOST: 'cluster.commcarehq.local'
 
 special_sites: []
 fake_ssl_cert: True

@@ -33,8 +33,8 @@ couch_dbs:
     password: "{{ localsettings_private.COUCH_PASSWORD }}"
     is_https: False
 
-server_email: commcare@cluster.commcarehq.test
-default_from_email: commcare@cluster.commcarehq.test
+server_email: commcare@cluster.commcarehq.local
+default_from_email: commcare@cluster.commcarehq.local
 root_email: /dev/null
 
 rabbitmq_version: 3.8.5-1
@@ -47,7 +47,7 @@ KSPLICE_ACTIVE: no
 DATADOG_ENABLED: False
 
 nameservers: []
-internal_domain_name: 'commcarehq.test'
+internal_domain_name: 'commcarehq.local'
 
 filebeat_inputs:
   - path: "{{ log_home }}/{{ deploy_env }}_commcare-nginx_error.log"
@@ -59,7 +59,7 @@ TWO_FACTOR_GATEWAY_ENABLED: False
 
 localsettings:
   ALLOWED_HOSTS:
-    - 'cluster.commcarehq.test'
+    - 'cluster.commcarehq.local'
   BANK_ADDRESS: ~
   BANK_NAME: ~
   BANK_SWIFT_CODE: ~
@@ -96,7 +96,7 @@ localsettings:
   #  PILLOWTOP_MACHINE_ID:
   PILLOW_RETRY_QUEUE_ENABLED: True
   REDIS_DB: '0'
-  REDIS_HOST: 'db1.cluster.commcare.local'
+  REDIS_HOST: '192.168.122.4'
   REDIS_PORT: '6379'
   REMINDERS_QUEUE_ENABLED: False
   SMS_GATEWAY_URL: 'http://gw1.promessaging.com/sms.php'

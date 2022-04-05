@@ -15,11 +15,11 @@ postgres_override:
 dbs:
   form_processing:
     proxy:
-      host: db2
+      host: db1
     partitions:
       p1:
         shards: [0, 511]
-        host: db2
+        host: db1
       p2:
         shards: [512, 1023]
         host: db2

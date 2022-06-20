@@ -1,3 +1,4 @@
+wipe_environment_enabled: True
 elasticsearch_endpoint: '{{ groups.elasticsearch.0 }}'
 elasticsearch_memory: '2048m'
 elasticsearch_cluster_name: 'cluster-es'
@@ -15,6 +16,7 @@ zookeeper_download_sha1: sha1:0285717bf5ea87a7a36936bf37851d214a32bb99
 zookeeper_cluster: True
 
 erlang: 1:23.0.2-2
+rabbitmq_version: 3.8.5-1
 
 backup_blobdb: True
 backup_postgres: 'plain'

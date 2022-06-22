@@ -17,6 +17,8 @@ zookeeper_cluster: True
 
 erlang: 1:23.0.2-2
 rabbitmq_version: 3.8.5-1
+BROKER_URL: 'amqp://{{ AMQP_USER }}:{{ AMQP_PASSWORD }}@{{ AMQP_HOST }}:5672/{{ AMQP_NAME }}'
+AMQP_HOST: "{{ groups.rabbitmq.0 }}"
 
 backup_blobdb: True
 backup_postgres: 'plain'
@@ -50,11 +52,6 @@ couch_dbs:
 server_email: commcare@cluster.commcarehq.local
 default_from_email: commcare@cluster.commcarehq.local
 root_email: /dev/null
-
-rabbitmq_version: 3.8.5-1
-BROKER_URL: 'amqp://{{ AMQP_USER }}:{{ AMQP_PASSWORD }}@{{ AMQP_HOST }}:5672/{{ AMQP_NAME }}'
-
-AMQP_HOST: "{{ groups.rabbitmq.0 }}"
 
 KSPLICE_ACTIVE: no
 

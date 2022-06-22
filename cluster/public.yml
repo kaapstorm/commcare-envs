@@ -30,7 +30,7 @@ couch_s3: False
 couchdb2:
   username: "{{ localsettings_private.COUCH_USERNAME }}"
   password: "{{ localsettings_private.COUCH_PASSWORD }}"
-
+couchdb_version: '3.1.1'
 couchdb_cluster_settings:
   q: 8
   r: 1
